@@ -1,0 +1,33 @@
+db.user.insert([
+  {
+    _id:1,
+    "role_id":1,
+    "login":"admin",
+    "password":"admin"
+
+  },
+  {
+    _id:2,
+    "role_id":2,
+    "login":"manager",
+    "password":"manager"
+  },
+    {
+      _id:3,
+      "role_id":3,
+      "login":"user",
+      "password":"user"
+    },
+    {
+      _id:4,
+      "role_id":3,
+      "login":"user1",
+      "password":"user1"
+    },
+    {
+      _id:5,
+      "role_id":3,
+      "login":"user2",
+      "password":"user2"
+    }
+  ])
