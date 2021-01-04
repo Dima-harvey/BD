@@ -31,7 +31,7 @@ $$ LANGUAGE plpgsql
 исходя из стоимости доставки (если таковая имеется) и стоимости товаров в корзине.
 
 CREATE FUNCTION OR REPLACE FUNCTION orderINFO(order_id INT) RETURNS SETOF money AS $$
-DECLARE orderPrice MONEY; deliveryPrice MONEY;
+DECLARE orderPrice MONEY, deliveryPrice MONEY;
 BEGIN
 SELECT SUM(pr_basket.price) ), delivery_record.price INTO orderPrice,deliveryPrice
 FROM orders
